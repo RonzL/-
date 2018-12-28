@@ -12,7 +12,7 @@ import cards_tools
 info = [{"name": "", "phone": "", "qq": "", "email": ""}]
 
 while True:
-    # TODO 显示系统菜单
+    # 显示系统菜单
     cards_tools.menu_dis()
     str_main = input("请输入您将要进行的操作： ")
     if str_main.isdigit():
