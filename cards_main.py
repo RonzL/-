@@ -9,7 +9,7 @@
 
 import cards_tools
 
-info = [{"name": "", "phone": "", "qq": "", "email": ""}]
+# info = [{"name": "", "phone": "", "qq": "", "email": ""}]
 
 while True:
     # 显示系统菜单
