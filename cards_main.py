@@ -15,21 +15,19 @@ while True:
     # 显示系统菜单
     cards_tools.menu_dis()
     str_main = input("请输入您将要进行的操作： ")
-    if str_main.isdigit():
-        choice = int(str_main)
-        print("您选择的操作是: %d" % choice)
+    if str_main in ["1", "2", "3"]:
+	# if str_main.isdigit():
+        # choice = int(str_main)
+        print("您选择的操作是: %s" % str_main)
         if choice == 1:
             cards_tools.add_info()
         elif choice == 2:
             cards_tools.info_display()
         elif choice == 3:
             cards_tools.del_info()
-        elif choice == 0:
+	elif str_main == "0":
             print("欢迎您下次使用名片管理系统，再见！")
             break
-        else:
-            print("您的输入有误，请重新输入！（输入的数字在0-3之间）")
-            continue
     else:
         print("您的输入有误，请重新输入！(输入的内容只能为数字)")
         continue
